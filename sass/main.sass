@@ -1,0 +1,108 @@
+@import reset
+@import header
+@import footer
+@import media
+
+$accent-color: #fb973b
+
+body
+	font-family: "Calibri"
+
+.container
+	width: 100%
+	max-width: 1250px
+	min-width: 1250px
+	margin: 0 auto
+
+.flex
+	display: flex
+	justify-content: space-between
+
+h2
+	font-size: 60px
+	line-height: 72px
+	color: #141419
+	font-weight: bold
+	text-decoration: underline
+	text-decoration-color: $accent-color
+	margin-bottom: 40px
+span
+	color: $accent-color
+	font-weight: bold
+
+p
+	color: #616161
+	font-size: 24px
+	line-height: 36px
+
+.intro
+	padding: 100px 0 150px
+	position: relative
+.cow-bg
+	position: absolute
+	right: 0
+	top: 0
+	z-index: -1
+.tassels
+	position: absolute
+	right: 170px
+	top: 62px
+	z-index: -1
+.callback
+	width: 54%
+
+form
+	margin-top: 40px
+	font-size: 18px
+	.tel
+		background-color: #f8f8f8
+		border: 1px solid #e1e1e1
+		padding: 20px
+		color: #141419
+	.submit
+		padding: 20px 35px
+		color: #fff
+		background-color: $accent-color
+		border: 1px solid $accent-color
+		cursor: pointer
+		position: relative
+		left: -5px
+
+.about
+	.container
+		text-align: center
+.about-lamp
+	margin: 0 auto
+	width: 65%
+	justify-content: space-around
+.about-list
+	width: 48%
+	&__item
+		margin: 90px 0
+		font-size: 18px
+		line-height: 25px
+		color: #141419
+		position: relative
+		&:before
+			content: url('../img/1.png')
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+			top: -50px
+.work:before
+	content: url('../img/2.png')
+	top: -70px
+.teams:before
+	content: url('../img/3.png')
+	top: -70px
+
+
+.partners
+	padding: 150px 0 25px
+.partners-title
+	width: 35%
+.partners-logos
+	flex-wrap: wrap
+	width: 50%
+	figure
+		margin-bottom: 65px
